@@ -104,7 +104,7 @@ for ssid in "${wifi_networks[@]}"; do
                     send_result $ssid 0
                 else
                     #echo "$CURRENT_PING_HOST - пинг не прошел"
-                    send_result $ssid 3 # нет пинга по имени хоста (DNS)
+                    send_result $ssid 3 # нет пинга по имени хоста (DNS), есть пинг по IP
                 fi
             else
                 #echo "$CURRENT_PING_IP - пинг не прошел"
